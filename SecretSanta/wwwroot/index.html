@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Секретный Санта – Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="join-section">
+            <span class="emoji-header">🧔</span>
+            <h1>Стань Тайным Другом!</h1>
+            <p>Введи свое имя, чтобы получить задание.</p>
+            <div class="input-group">
+                <label for="user-name">Ваше имя</label>
+                <input type="text" id="user-name" placeholder="Иван" required>
+            </div>
+            <button id="join-btn">Участвовать / Получить подарок</button>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <span class="emoji-header">🎁</span>
+            <div id="greeting-text"></div>
+            
+            <div id="friend-wish-display" style="margin-top: 15px; padding: 10px; background: #f8f9fa; border-radius: 8px; display: none;"></div>
+            
+            <div class="input-group" style="margin-top: 20px;">
+                <label for="wish-input">Твое пожелание другу</label>
+                <textarea id="wish-input" placeholder="Напиши пожелание..."></textarea>
+            </div>
+            <button id="send-wish-btn">Отправить пожелание</button>
+            <p id="status-message" style="margin-top: 10px; font-weight: bold;"></p>
+        </div>
+    </div>
+
+    <div class="footer" style="text-align: center; margin-top: 20px;">
+        <a href="wish.html" target="_blank">🔍 Узнать пожелание друга</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
